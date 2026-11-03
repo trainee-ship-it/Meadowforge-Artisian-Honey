@@ -12,13 +12,24 @@ dist
 dist-ssr
 *.local
 
+# Env files
+.env
+.env.*
+!.env.example
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+Thumbs.db
+desktop.ini
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Raw design source bundles (zips, exported HTML) — unpack and commit only
+# the assets actually used by the app, not the source archive itself
+*.zip
